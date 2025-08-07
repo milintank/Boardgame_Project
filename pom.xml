@@ -115,6 +115,18 @@
                 </executions>
             </plugin>
         </plugins>
+         <plugin>
+           <groupId>org.owasp</groupId>
+           <artifactId>dependency-check-maven</artifactId>
+           <version>8.4.0</version> <!-- Use latest -->
+           <executions>
+             <execution>
+               <goals>
+                 <goal>check</goal>
+               </goals>
+             </execution>
+           </executions>
+         </plugin>
     </build>
 
     <distributionManagement>
